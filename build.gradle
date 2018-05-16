@@ -1,0 +1,33 @@
+group 'com.kat.bachaat'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'com.kat.bachaat.BachaatApplication'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            "javax.servlet:javax.servlet-api:3.1.0",
+            "org.springframework:spring-webmvc:5.0.5.RELEASE",
+            "org.springframework:spring-core:5.0.5.RELEASE",
+            "com.fasterxml.jackson.core:jackson-core:2.9.2",
+            "org.springframework:spring-web:5.0.5.RELEASE",
+            "org.hibernate:hibernate-core:5.2.7.Final",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:8.0.47"
+
+    )
+    testCompile(
+            "junit:junit:4.12"
+    )
+
+}
