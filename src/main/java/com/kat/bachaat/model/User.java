@@ -14,7 +14,6 @@ public class User {
     private boolean active = false;
 
     public User() {
-        this.activationCode = new Random().nextInt(900000) + 100000;
     }
 
     public User(Long userId, String firstName, String middleName, String lastName, String email, String address, int activationCode, Long mobileNumber, boolean active) {
@@ -104,7 +103,14 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "activationCode=" + activationCode +
+                " firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", activationCode=" + activationCode +
+                ", mobileNumber=" + mobileNumber +
+                ", active=" + active +
                 '}';
     }
 }
