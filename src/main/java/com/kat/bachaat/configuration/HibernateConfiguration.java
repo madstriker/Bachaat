@@ -46,7 +46,7 @@ public class HibernateConfiguration {
     private Properties getHibernateProperties() {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", environment.getProperty("spring.datasource.dialect"));
-        properties.put("hibernate.hbm2ddl.auto", "create");
+        properties.put("hibernate.hbm2ddl.auto", "update");
         return properties;
     }
 
