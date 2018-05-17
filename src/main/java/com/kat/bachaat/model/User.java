@@ -1,6 +1,6 @@
 package com.kat.bachaat.model;
 
-
+import java.util.Random;
 
 public class User {
     private Long userId;
