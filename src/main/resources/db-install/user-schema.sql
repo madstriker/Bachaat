@@ -8,6 +8,6 @@ CREATE TABLE tbl_user (
     address varchar(50),
     activation_code int,
     created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ,
-    updated_date TIMESTAMP  DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    active boolean
+    updated_date TIMESTAMP DEFAULT 0 ON UPDATE CURRENT_TIMESTAMP ,
+    active boolean DEFAULT FALSE
 );
