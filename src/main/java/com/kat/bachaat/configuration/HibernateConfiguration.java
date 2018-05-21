@@ -23,11 +23,12 @@ import java.util.Properties;
 public class HibernateConfiguration {
 
     @Autowired
-    private Environment environment;
+    private  Environment environment;
 
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        System.out.println("????????????????"+environment.getProperty("spring.datasource.driverClassName"));
         dataSource.setDriverClassName(environment.getProperty("spring.datasource.driverClassName"));
         dataSource.setUrl(environment.getProperty("spring.datasource.url"));
         dataSource.setUsername(environment.getProperty("spring.datasource.username"));

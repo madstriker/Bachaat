@@ -26,10 +26,14 @@ dependencies {
             "org.springframework:spring-orm:5.0.5.RELEASE",
             "org.hibernate:hibernate-core:5.2.7.Final",
             "com.fasterxml.jackson.core:jackson-core:2.9.2",
+            "com.fasterxml.jackson.core:jackson-databind:2.9.2",
             "org.apache.tomcat.embed:tomcat-embed-jasper:8.0.47",
-            "mysql:mysql-connector-java:5.1.38"
+            "mysql:mysql-connector-java:5.1.38",
+            "org.springframework.security.oauth:spring-security-oauth2:2.3.0.RELEASE",
+            "org.springframework.security:spring-security-config:5.0.5.RELEASE",
+            "org.springframework.security:spring-security-core:5.0.5.RELEASE",
+            "org.springframework.security:spring-security-web:5.0.5.RELEASE"
     )
-
     testCompile(
             "junit:junit:4.12"
     )
